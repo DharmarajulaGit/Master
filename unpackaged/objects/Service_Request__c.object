@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Appliocation_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Application Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CONNECT</fullName>
+                    <default>false</default>
+                    <label>CONNECT</label>
+                </value>
+                <value>
+                    <fullName>CPC Web App</fullName>
+                    <default>false</default>
+                    <label>CPC Web App</label>
+                </value>
+                <value>
+                    <fullName>Innovation Center</fullName>
+                    <default>false</default>
+                    <label>Innovation Center</label>
+                </value>
+                <value>
+                    <fullName>MDPCP</fullName>
+                    <default>false</default>
+                    <label>MDPCP</label>
+                </value>
+                <value>
+                    <fullName>Reusable Framework</fullName>
+                    <default>false</default>
+                    <label>Reusable Framework</label>
+                </value>
+                <value>
+                    <fullName>CPC BIR</fullName>
+                    <default>false</default>
+                    <label>CPC BIR</label>
+                </value>
+                <value>
+                    <fullName>IC BIR</fullName>
+                    <default>false</default>
+                    <label>IC BIR</label>
+                </value>
+                <value>
+                    <fullName>QMAT</fullName>
+                    <default>false</default>
+                    <label>QMAT</label>
+                </value>
+                <value>
+                    <fullName>QMAT Reports</fullName>
+                    <default>false</default>
+                    <label>QMAT Reports</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SR_Feature__c</fullName>
+        <externalId>false</externalId>
+        <label>SR Feature</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Appliocation_Type__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Communities</fullName>
+                    <default>false</default>
+                    <label>Communities</label>
+                </value>
+                <value>
+                    <fullName>Educational Materials &amp; Reports</fullName>
+                    <default>false</default>
+                    <label>Educational Materials &amp; Reports</label>
+                </value>
+                <value>
+                    <fullName>User Accounts</fullName>
+                    <default>false</default>
+                    <label>User Accounts</label>
+                </value>
+                <value>
+                    <fullName>Support</fullName>
+                    <default>false</default>
+                    <label>Support</label>
+                </value>
+                <value>
+                    <fullName>Access</fullName>
+                    <default>false</default>
+                    <label>Access</label>
+                </value>
+                <value>
+                    <fullName>Files</fullName>
+                    <default>false</default>
+                    <label>Files</label>
+                </value>
+                <value>
+                    <fullName>Report(s)</fullName>
+                    <default>false</default>
+                    <label>Report(s)</label>
+                </value>
+                <value>
+                    <fullName>Submission Period(s)</fullName>
+                    <default>false</default>
+                    <label>Submission Period(s)</label>
+                </value>
+                <value>
+                    <fullName>Technical Support</fullName>
+                    <default>false</default>
+                    <label>Technical Support</label>
+                </value>
+                <value>
+                    <fullName>Data Center</fullName>
+                    <default>false</default>
+                    <label>Data Center</label>
+                </value>
+                <value>
+                    <fullName>Production Support</fullName>
+                    <default>false</default>
+                    <label>Production Support</label>
+                </value>
+                <value>
+                    <fullName>Security</fullName>
+                    <default>false</default>
+                    <label>Security</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>CONNECT</controllingFieldValue>
+                <valueName>Communities</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CONNECT</controllingFieldValue>
+                <valueName>Educational Materials &amp; Reports</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CONNECT</controllingFieldValue>
+                <valueName>User Accounts</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CONNECT</controllingFieldValue>
+                <valueName>Support</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CPC Web App</controllingFieldValue>
+                <valueName>Access</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CPC Web App</controllingFieldValue>
+                <valueName>Files</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CPC Web App</controllingFieldValue>
+                <valueName>Report(s)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CPC Web App</controllingFieldValue>
+                <valueName>Submission Period(s)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CPC Web App</controllingFieldValue>
+                <controllingFieldValue>MDPCP</controllingFieldValue>
+                <valueName>Technical Support</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CPC Web App</controllingFieldValue>
+                <controllingFieldValue>MDPCP</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MDPCP</controllingFieldValue>
+                <valueName>Data Center</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MDPCP</controllingFieldValue>
+                <valueName>Production Support</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MDPCP</controllingFieldValue>
+                <valueName>Security</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SR_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>SR Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>SR_Feature__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>• Archive a community</fullName>
+                    <default>false</default>
+                    <label>• Archive a community</label>
+                </value>
+                <value>
+                    <fullName>• Create a community</fullName>
+                    <default>false</default>
+                    <label>• Create a community</label>
+                </value>
+                <value>
+                    <fullName>• Create/configure data report</fullName>
+                    <default>false</default>
+                    <label>• Create/configure data report</label>
+                </value>
+                <value>
+                    <fullName>• Educate users, update materials</fullName>
+                    <default>false</default>
+                    <label>• Educate users, update materials</label>
+                </value>
+                <value>
+                    <fullName>• Create/configure user accounts</fullName>
+                    <default>false</default>
+                    <label>• Create/configure user accounts</label>
+                </value>
+                <value>
+                    <fullName>• Deactivate user accounts</fullName>
+                    <default>false</default>
+                    <label>• Deactivate user accounts</label>
+                </value>
+                <value>
+                    <fullName>• Upload/configure content</fullName>
+                    <default>false</default>
+                    <label>• Upload/configure content</label>
+                </value>
+                <value>
+                    <fullName>• Configure system settings</fullName>
+                    <default>false</default>
+                    <label>• Configure system settings</label>
+                </value>
+                <value>
+                    <fullName>• Research</fullName>
+                    <default>false</default>
+                    <label>• Research</label>
+                </value>
+                <value>
+                    <fullName>• Troubleshoot</fullName>
+                    <default>false</default>
+                    <label>• Troubleshoot</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Communities</controllingFieldValue>
+                <controllingFieldValue>Access</controllingFieldValue>
+                <valueName>• Archive a community</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Communities</controllingFieldValue>
+                <valueName>• Create a community</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Educational Materials &amp; Reports</controllingFieldValue>
+                <valueName>• Create/configure data report</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Educational Materials &amp; Reports</controllingFieldValue>
+                <valueName>• Educate users, update materials</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>User Accounts</controllingFieldValue>
+                <valueName>• Create/configure user accounts</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>User Accounts</controllingFieldValue>
+                <valueName>• Deactivate user accounts</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Support</controllingFieldValue>
+                <valueName>• Upload/configure content</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Support</controllingFieldValue>
+                <valueName>• Configure system settings</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Support</controllingFieldValue>
+                <valueName>• Research</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Support</controllingFieldValue>
+                <valueName>• Troubleshoot</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <label>Service Request</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Service Request Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Service Requests</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

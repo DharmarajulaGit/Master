@@ -1,0 +1,38 @@
+<apex:page Controller="ControllerClass" >
+    <apex:form >
+        
+        <apex:pageBlock title="display records">
+
+            <apex:pageBlockSection columns="1">
+                <apex:inputField value="{!objTalent.Name__c}"/>
+                <apex:inputField value="{!objTalent.Developer__c}"/>
+                <apex:inputField value="{!objTalent.None__c}"/>
+                <apex:inputField value="{!objTalent.Email__c}"/>
+                
+                
+                
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!saveonLoad}" value="Save"/>
+                 <!--<apex:commandButton action="{!back}" value="backpage"/>-->
+            </apex:pageBlockButtons>
+          <apex:dataTable value="{!recordDetails}" var="a">
+          <apex:column headerValue="First Name">
+          <apex:outputField value="{!a.Name__c}"/>
+          </apex:column>
+              <apex:column headerValue="Type">
+          <apex:outputField value="{!a.Developer__c}"/>
+          </apex:column>
+              <apex:column headerValue="PhoneNumber">
+          <apex:outputField value="{!a.None__c}"/>
+          </apex:column>
+              <apex:column headerValue="CreatingDate">
+          <apex:outputField value="{!a.Email__c}"/>
+          </apex:column>
+          
+          
+          </apex:dataTable>
+        </apex:pageBlock>
+        
+    </apex:form>
+</apex:page>
