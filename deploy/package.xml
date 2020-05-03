@@ -6,15 +6,10 @@
 		<members>AccountHandler</members>
 		<members>AccountManager</members>
 		<members>AccountManagerTest</members>
-		<members>AccountProcessor</members>
         <name>ApexClass</name>
     </types>
     <types>
         <members>AnswersHome</members>
-		<members>BandwidthExceeded</members>
-		<members>ChangePassword</members>
-		<members>CommunitiesLanding</members>
-		<members>CommunitiesLogin</members>
         <name>ApexPage</name>
     </types>
     <version>45.0</version>
