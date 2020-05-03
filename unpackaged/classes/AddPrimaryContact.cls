@@ -4,6 +4,8 @@ public class AddPrimaryContact implements Queueable{
     public AddPrimaryContact(Contact  con,String State){
         this.con = con;
         this.State = State;
+        
+        
     }    
     public void execute(QueueableContext context){
         //Added the comment for git
