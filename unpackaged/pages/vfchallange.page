@@ -1,5 +1,0 @@
-<apex:page controller="Challenge">
-    <apex:pageBlock title="Four Fields">
-    
-    </apex:pageBlock>
-</apex:page>
